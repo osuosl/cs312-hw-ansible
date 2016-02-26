@@ -1,0 +1,24 @@
+- name: install epel-release
+  yum: name=epel-release state=present
+
+- name: install packages
+  yum: name={{ item }} state=present
+  with_items:
+    - git
+    - python-pip
+    - python-virtualenv
+    - gcc
+    - libjpeg-devel
+    - zlib-devel
+
+- name: Create cs312 user
+  user: name=cs312 system=yes
+
+- name: Clone cs312 repo
+  git: repo=https://github.com/osuosl/cs312.git dest=/var/www/cs312
+
+- name: Build cs312 site
+  command: scripts/build.sh chdir=/var/www/cs312
+
+- name: Symlink cs312 site
+  file: src=/var/www/cs312/build/html dest=/var/www/html/cs312 state=link

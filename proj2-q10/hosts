@@ -1,0 +1,2 @@
+[cs312]
+cs312 ansible_ssh_host=140.211.168.XXX ansible_ssh_user=centos
