@@ -1,1 +1,10 @@
-q10/roles/httpd/templates/index.html.j2
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hostname: {{ ansible_hostname }}</p>
+<p>IP Addresses: {{ ansible_all_ipv4_addresses | join(",") }}, {{ ansible_all_ipv6_addresses | join(", ") }}</p>
+<p>Distribution: {{ ansible_distribution }} {{ ansible_distribution_version }}</p>
+<p>Free memory: {{ ansible_memfree_mb }}</p>
+<p>Size of vda: {{ ansible_devices.vda.partitions.vda1.size }}</p>
+</body>
+</html>
