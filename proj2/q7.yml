@@ -1,0 +1,32 @@
+- hosts: all
+  vars:
+    disks:
+    - 0
+    - 1
+  tasks:
+  - name: Create devices with dd
+    command: dd if=/dev/zero of=/tmp/disk{{ item }} bs=1M count=200
+    with_items: "{{disks}}"
+    args:
+      creates: /tmp/disk{{ item }}
+
+  - name: Create loopback devices
+    command: losetup /dev/loop{{ item }} /tmp/disk{{ item }}
+    with_items: "{{disks}}"
+    args:
+      creates: /dev/loop{{ item }}
+
+  - name: Install LVM
+    yum: name=lvm2 state=present
+
+  - name: Create VG
+    lvg: vg=ansible_vg pvs=/dev/loop0,/dev/loop1
+
+  - name: Create data volume
+    lvol: vg=ansible_vg lv=data size=50M
+
+  - name: Create www volume
+    lvol: vg=ansible_vg lv=www size=100%FREE
+
+  - name: Delete backup volume
+    lvol: vg=ansible_vg lv=backup state=absent

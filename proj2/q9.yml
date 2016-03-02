@@ -1,0 +1,28 @@
+- hosts: all
+  tasks:
+    - name: install epel-release
+      yum: name=epel-release state=present
+
+    - name: install packages
+      yum: name={{ item }} state=present
+      with_items:
+        - git
+        - httpd
+        - epel-release
+        - python-pip
+        - python-virtualenv
+        - libjpeg-devel
+        - zlib-devel
+        - gcc
+
+    - name: Start httpd
+      service: name=httpd state=started enabled=yes
+
+    - name: Create cs312 user
+      user: name=cs312 system=yes
+
+    - name: Clone cs312 repo
+      git: repo=https://github.com/osuosl/cs312.git dest=/var/www/cs312
+
+    - name: Build cs312 site
+      command: scripts/build.sh chdir=/var/www/cs312
