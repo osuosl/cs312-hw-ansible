@@ -1,0 +1,2 @@
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                         NAMES
+8ec87874e5f1        cs312/site          "nginx -g 'daemon off"   About a minute ago   Up About a minute   0.0.0.0:80->80/tcp, 443/tcp   cs312

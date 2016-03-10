@@ -1,0 +1,9 @@
+[Unit]
+Description=cs312 service
+BindsTo=cs312.service
+
+[Service]
+ExecStartPre=-/usr/bin/docker kill cs312
+ExecStartPre=-/usr/bin/docker rm cs312
+ExecStart=/usr/bin/docker run -p 80:80 --name cs312 cs312/site
+ExecStop=/usr/bin/docker stop cs312

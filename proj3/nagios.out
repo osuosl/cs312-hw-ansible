@@ -1,0 +1,60 @@
+Mar 09 19:49:58 cs312.novalocal systemd[1]: Starting Nagios Network Monitoring...
+Mar 09 19:49:58 cs312.novalocal systemd[1]: Failed to read PID from file /var/run/nagios/nagios.pid: Invalid argument
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: Nagios 4.0.8 starting... (PID=2739)
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: Local time is Wed Mar 09 19:49:58 UTC 2016
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: LOG VERSION: 2.0
+Mar 09 19:49:58 cs312.novalocal systemd[1]: Started Nagios Network Monitoring.
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: qh: Socket '/var/spool/nagios/cmd/nagios.qh' successfully initialized
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: qh: core query handler registered
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: nerd: Channel hostchecks registered successfully
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: nerd: Channel servicechecks registered successfully
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: nerd: Channel opathchecks registered successfully
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: nerd: Fully initialized and ready to rock!
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: wproc: Successfully registered manager as @wproc with query handler
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: wproc: Registry request: name=Core Worker 2743;pid=2743
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: wproc: Registry request: name=Core Worker 2744;pid=2744
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: wproc: Registry request: name=Core Worker 2745;pid=2745
+Mar 09 19:49:58 cs312.novalocal nagios[2739]: wproc: Registry request: name=Core Worker 2742;pid=2742
+Mar 09 19:49:58 cs312.novalocal systemd[1]: Starting NRPE...
+Mar 09 19:49:58 cs312.novalocal systemd[1]: Started NRPE.
+Mar 09 19:49:58 cs312.novalocal nrpe[2804]: Starting up daemon
+Mar 09 19:49:58 cs312.novalocal nrpe[2804]: Server listening on 0.0.0.0 port 5666.
+Mar 09 19:49:58 cs312.novalocal nrpe[2804]: Server listening on :: port 5666.
+Mar 09 19:49:58 cs312.novalocal nrpe[2804]: Listening for connections on port 0
+Mar 09 19:49:58 cs312.novalocal nrpe[2804]: Allowing connections from: 127.0.0.1
+Mar 09 19:49:59 cs312.novalocal nagios[2739]: Successfully launched command file worker with pid 2984
+Mar 09 19:50:00 cs312.novalocal nagios[2739]: Caught SIGTERM, shutting down...
+Mar 09 19:50:00 cs312.novalocal nagios[2984]: Caught SIGTERM, shutting down...
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Stopping Nagios Network Monitoring...
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Stopped Nagios Network Monitoring.
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Starting Nagios Network Monitoring...
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Failed to read PID from file /var/run/nagios/nagios.pid: Invalid argument
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: Nagios 4.0.8 starting... (PID=3191)
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: Local time is Wed Mar 09 19:50:00 UTC 2016
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: LOG VERSION: 2.0
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: qh: Socket '/var/spool/nagios/cmd/nagios.qh' successfully initialized
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: qh: core query handler registered
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: nerd: Channel hostchecks registered successfully
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: nerd: Channel servicechecks registered successfully
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: nerd: Channel opathchecks registered successfully
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: nerd: Fully initialized and ready to rock!
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: wproc: Successfully registered manager as @wproc with query handler
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Started Nagios Network Monitoring.
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: wproc: Registry request: name=Core Worker 3192;pid=3192
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: wproc: Registry request: name=Core Worker 3193;pid=3193
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: wproc: Registry request: name=Core Worker 3194;pid=3194
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: wproc: Registry request: name=Core Worker 3195;pid=3195
+Mar 09 19:50:00 cs312.novalocal nagios[3191]: Successfully launched command file worker with pid 3197
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Stopping NRPE...
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Stopped NRPE.
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Starting NRPE...
+Mar 09 19:50:00 cs312.novalocal systemd[1]: Started NRPE.
+Mar 09 19:50:00 cs312.novalocal nrpe[3246]: Starting up daemon
+Mar 09 19:50:00 cs312.novalocal nrpe[3246]: Server listening on 0.0.0.0 port 5666.
+Mar 09 19:50:00 cs312.novalocal nrpe[3246]: Server listening on :: port 5666.
+Mar 09 19:50:00 cs312.novalocal nrpe[3246]: Listening for connections on port 0
+Mar 09 19:50:00 cs312.novalocal nrpe[3246]: Allowing connections from: 127.0.0.1
+Mar 09 19:51:50 cs312.novalocal nagios[3191]: SERVICE ALERT: localhost;HTTP;WARNING;SOFT;1;HTTP WARNING: HTTP/1.1 403 Forbidden - 5179 bytes in 0.003 seco
+Mar 09 19:52:50 cs312.novalocal nagios[3191]: SERVICE ALERT: localhost;HTTP;WARNING;SOFT;2;HTTP WARNING: HTTP/1.1 403 Forbidden - 5179 bytes in 0.001 seco
+Mar 09 19:53:50 cs312.novalocal nagios[3191]: SERVICE ALERT: localhost;HTTP;WARNING;SOFT;3;HTTP WARNING: HTTP/1.1 403 Forbidden - 5179 bytes in 0.001 seco
+Mar 09 19:54:50 cs312.novalocal nagios[3191]: SERVICE ALERT: localhost;HTTP;WARNING;HARD;4;HTTP WARNING: HTTP/1.1 403 Forbidden - 5179 bytes in 0.001 seco

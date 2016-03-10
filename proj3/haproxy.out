@@ -1,0 +1,18 @@
+-- Logs begin at Wed 2016-03-09 20:08:47 UTC, end at Wed 2016-03-09 20:14:50 UTC. --
+Mar 09 20:12:03 cs312.novalocal systemd[1]: Started HAProxy Load Balancer.
+Mar 09 20:12:03 cs312.novalocal systemd[1]: Starting HAProxy Load Balancer...
+Mar 09 20:12:03 cs312.novalocal haproxy-systemd-wrapper[2412]: haproxy-systemd-wrapper: executing /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/ha
+Mar 09 20:12:05 cs312.novalocal systemd[1]: Stopping HAProxy Load Balancer...
+Mar 09 20:12:05 cs312.novalocal haproxy-systemd-wrapper[2412]: haproxy-systemd-wrapper: SIGINT -> 2415
+Mar 09 20:12:05 cs312.novalocal haproxy-systemd-wrapper[2412]: haproxy-systemd-wrapper: exit, haproxy RC=15
+Mar 09 20:12:05 cs312.novalocal systemd[1]: haproxy.service: main process exited, code=exited, status=15/n/a
+Mar 09 20:12:05 cs312.novalocal systemd[1]: Stopped HAProxy Load Balancer.
+Mar 09 20:12:05 cs312.novalocal systemd[1]: Unit haproxy.service entered failed state.
+Mar 09 20:12:05 cs312.novalocal systemd[1]: haproxy.service failed.
+Mar 09 20:12:05 cs312.novalocal systemd[1]: Started HAProxy Load Balancer.
+Mar 09 20:12:05 cs312.novalocal systemd[1]: Starting HAProxy Load Balancer...
+Mar 09 20:12:05 cs312.novalocal haproxy[2680]: Proxy http started.
+Mar 09 20:12:05 cs312.novalocal haproxy[2680]: Proxy blog started.
+Mar 09 20:12:05 cs312.novalocal haproxy[2680]: Proxy intranet started.
+Mar 09 20:12:05 cs312.novalocal haproxy[2680]: Proxy www started.
+Mar 09 20:12:05 cs312.novalocal haproxy-systemd-wrapper[2678]: haproxy-systemd-wrapper: executing /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/ha

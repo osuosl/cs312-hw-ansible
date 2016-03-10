@@ -1,0 +1,19 @@
+---
+# tasks file for docker
+- name: Install docker
+  yum: name=docker state=present
+
+- name: Start docker service
+  service: name=docker state=started enabled=yes
+
+- name: Copy Dockerfile
+  copy: src=Dockerfile dest=/tmp/Dockerfile
+
+- name: Build cs312/site
+  command: docker build -t cs312/site . chdir=/tmp
+
+- name: Copy cs312.service
+  copy: src=cs312.service dest=/etc/systemd/system/cs312.service
+
+- name: Start cs312 container
+  service: name=cs312 state=started enabled=yes

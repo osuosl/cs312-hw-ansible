@@ -1,0 +1,19 @@
+-- Logs begin at Wed 2016-03-09 20:15:42 UTC, end at Wed 2016-03-09 20:28:47 UTC. --
+Mar 09 20:27:33 cs312.novalocal systemd[1]: Starting cs312 service...
+Mar 09 20:27:33 cs312.novalocal docker[6043]: Error response from daemon: Cannot kill container cs312: no such id: cs312
+Mar 09 20:27:33 cs312.novalocal docker[6043]: Error: failed to kill containers: [cs312]
+Mar 09 20:27:34 cs312.novalocal docker[6047]: Error response from daemon: no such id: cs312
+Mar 09 20:27:34 cs312.novalocal docker[6047]: Error: failed to remove containers: [cs312]
+Mar 09 20:27:34 cs312.novalocal systemd[1]: Started cs312 service.
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET / HTTP/1.1" 200 8107 "-" "Mozilla/5.0 (X11; Linux x86_6
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/css/theme.css HTTP/1.1" 200 103575 "http://140
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/js/modernizr.min.js HTTP/1.1" 200 15414 "http:
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/underscore.js HTTP/1.1" 200 12140 "http://140.
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/jquery.js HTTP/1.1" 200 95786 "http://140.211.
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/doctools.js HTTP/1.1" 200 7377 "http://140.211
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/js/theme.js HTTP/1.1" 200 5551 "http://140.211
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/fonts/Lato-Regular.ttf HTTP/1.1" 200 120196 "h
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/fonts/Lato-Bold.ttf HTTP/1.1" 200 121788 "http
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/fonts/RobotoSlab-Bold.ttf HTTP/1.1" 200 170616
+Mar 09 20:28:47 cs312.novalocal docker[6053]: 140.211.167.27 - - [09/Mar/2016:20:28:47 +0000] "GET /_static/fonts/RobotoSlab-Regular.ttf HTTP/1.1" 200 169

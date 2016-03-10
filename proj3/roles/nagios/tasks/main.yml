@@ -1,0 +1,40 @@
+---
+# tasks file for nagios
+- name: Install EPEL
+  yum: name=epel-release
+
+- name: Install nagios
+  yum: name={{ item }} state=present
+  with_items:
+  - nagios
+  - nrpe
+  - nagios-plugins-all
+
+- name: Nagios Service
+  service: name=nagios state=started enabled=yes
+
+- name: NRPE Service
+  service: name=nrpe state=started enabled=yes
+
+- name: httpd Service
+  service: name=httpd state=started enabled=yes
+
+- name: Copy localhost.cfg
+  copy: src=localhost.cfg dest=/etc/nagios/objects/localhost.cfg
+  notify:
+  - restart nagios
+
+- name: Copy nagios-http
+  copy: src=nagios.cfg dest=/etc/nagios/conf.d/nagios.cfg
+  notify:
+  - restart nagios
+
+- name: Copy cs312-server
+  copy: src=cs312.cfg dest=/etc/nagios/conf.d/cs312.cfg
+  notify:
+  - restart nagios
+
+- name: Copy check_all_disks
+  copy: src=check_all_disks.cfg dest=/etc/nrpe.d/check_all_disks.cfg
+  notify:
+  - restart nrpe

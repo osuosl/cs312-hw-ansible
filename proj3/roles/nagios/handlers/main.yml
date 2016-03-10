@@ -1,0 +1,6 @@
+---
+# handlers file for nagios
+- name: restart nagios
+  service: name=nagios state=restarted
+- name: restart nrpe
+  service: name=nrpe state=restarted
